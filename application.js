@@ -8,8 +8,8 @@ if (navigator.mediaDevices.getUserMedia) {
     .then(function (stream) {
         video.srcObject = stream;
     })
-    .catch(function (err0r) {
-        console.log("Something went wrong!");
+    .catch(function (error) {
+        console.log(error);
     });
 }
 
@@ -17,6 +17,12 @@ if (navigator.mediaDevices.getUserMedia) {
     stopCamera(video);
     window.close();
  };
+
+webview.addEventListener('permissionrequest', function(e) {
+    if (e.permission === 'media') {
+    e.request.allow();
+    }
+});
 }
 
 function stopCamera(video){
