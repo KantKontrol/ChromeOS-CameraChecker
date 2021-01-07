@@ -18,11 +18,6 @@ if (navigator.mediaDevices.getUserMedia) {
     window.close();
  };
 
-document.querySelector("#container").addEventListener('permissionrequest', function(e) {
-    if (e.permission === 'media') {
-    e.request.allow();
-    }
-});
 }
 
 function stopCamera(video){
