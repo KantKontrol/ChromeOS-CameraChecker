@@ -18,7 +18,7 @@ if (navigator.mediaDevices.getUserMedia) {
     window.close();
  };
 
-webview.addEventListener('permissionrequest', function(e) {
+document.querySelector("#container").addEventListener('permissionrequest', function(e) {
     if (e.permission === 'media') {
     e.request.allow();
     }
