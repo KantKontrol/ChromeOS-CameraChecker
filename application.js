@@ -18,6 +18,13 @@ if (navigator.mediaDevices.getUserMedia) {
     window.close();
  };
 
+ document.querySelector('#toggleAudio').onclick = function() {
+
+    let m = document.getElementById('videoElement');
+    
+    m.muted ? m.muted = false : m.muted = true
+ };
+
 }
 
 function stopCamera(video){
