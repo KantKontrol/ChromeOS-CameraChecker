@@ -13,7 +13,8 @@
        }
      },
      "permissions": [
-       "webview"
+       "audioCapture",
+        "videoCapture"
      ],
      "kiosk_enabled": true
 }
