@@ -19,10 +19,16 @@ if (navigator.mediaDevices.getUserMedia) {
  };
 
  document.querySelector('#toggleAudio').onclick = function() {
-
     let m = document.getElementById('videoElement');
-    
-    m.muted ? m.muted = false : m.muted = true
+    let audioText = document.getElementById('audioDetect');
+    if(m.muted){
+        m.muted = false
+        audioText.innerHTML = "Audio is not muted";
+    }
+    else {
+        m.muted = true
+        audioText.innerHTML = "Audio is muted";
+    } 
  };
 
 }

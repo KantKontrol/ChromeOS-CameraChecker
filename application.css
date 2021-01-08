@@ -8,11 +8,28 @@ h1 {
 	text-shadow: 2px 2px 5px rgb(82, 179, 95);
 }
 
+
 button {
-	display: block !important;
-	margin: 0px auto;
 	width: 75px;
 	height: 45px;
+	align-self: center;
+}
+
+.control-holder {
+	display: flex;
+	margin: 0px auto;
+	width: 420px;
+	height: 55px;
+	justify-content: center;
+	text-align: center;
+}
+
+#audioDetect {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 8px;
+	margin-right: 8px;
+	width: max-content;
 }
 
 #container {
