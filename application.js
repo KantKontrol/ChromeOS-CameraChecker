@@ -27,10 +27,12 @@ if (navigator.mediaDevices.getUserMedia) {
     if(m.muted){
         m.muted = false
         audioText.innerHTML = "Audio is not muted";
+        audioText.classList = "";
     }
     else {
         m.muted = true
         audioText.innerHTML = "Audio is muted";
+        audioText.classList = "audioMutedText";
     } 
  };
 

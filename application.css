@@ -1,5 +1,6 @@
 body {
 	background-color: rgb(87, 79, 79);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1 {
@@ -7,6 +8,10 @@ h1 {
 	text-shadow: 2px 2px 3px black;
 }
 
+h3 {
+	color: rgb(247, 0, 0);
+	text-shadow: 2px 2px 3px black;
+}
 
 button {
 	width: 75px;
@@ -47,8 +52,12 @@ button:active {
 	text-shadow: 2px 2px 3px black;
 }
 
+.audioMutedText {
+	color: rgb(247, 0, 0) !important;
+}
+
 .container {
-	margin: 5px auto;
+	margin: 10px auto;
 	width: 400px;
 	height: 300px;
 	border: 10px rgb(34, 185, 92) solid;
