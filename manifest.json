@@ -1,5 +1,7 @@
 {
-    "name": "Camera Checker",
+    "name": "Chrome OS Camera Checker",
+    "short_name": "Camera Checker",
+    "author": "KantKontrol",
     "version": "1.0",
     "manifest_version": 2,
     "description": "A simple app used to check chromebook camera and microphone. Headphones recommended.",
