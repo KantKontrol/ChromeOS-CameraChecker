@@ -1,6 +1,6 @@
 # ChromeOS-CameraChecker
 
-[![ChromeOS Camera Checker](https://github.com/KantKontrol/ChromeOS-CameraChecker/blob/main/screenshots/CC-PromoPhoto.png?raw=true)]
+![ChromeOS Camera Checker](https://github.com/KantKontrol/ChromeOS-CameraChecker/blob/main/screenshots/CC-PromoPhoto.png?raw=true)
 
 ## Table of Contents
 
