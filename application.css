@@ -47,7 +47,7 @@ button:active {
 	text-shadow: 2px 2px 3px black;
 }
 
-#container {
+.container {
 	margin: 5px auto;
 	width: 400px;
 	height: 300px;

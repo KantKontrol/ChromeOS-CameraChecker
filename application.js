@@ -1,3 +1,5 @@
+const videoIsStream = false;
+
 window.onload = function() {
 
 var video = document.querySelector("#videoElement");
@@ -7,6 +9,7 @@ if (navigator.mediaDevices.getUserMedia) {
     navigator.mediaDevices.getUserMedia({ video: true, audio:true })
     .then(function (stream) {
         video.srcObject = stream;
+        videoIsStream = true;
     })
     .catch(function (error) {
         console.log(error);
@@ -34,13 +37,15 @@ if (navigator.mediaDevices.getUserMedia) {
 }
 
 function stopCamera(video){
-    var stream = video.srcObject;
-    var tracks = stream.getTracks();
-
-    for (var i = 0; i < tracks.length; i++) {
-        var track = tracks[i];
-        track.stop();
+    if(videoIsStream){
+        var stream = video.srcObject;
+        var tracks = stream.getTracks();
+    
+        for (var i = 0; i < tracks.length; i++) {
+            var track = tracks[i];
+            track.stop();
+        }
+    
+        video.srcObject = null;
     }
-
-    video.srcObject = null;
 }
