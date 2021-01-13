@@ -7,18 +7,20 @@
     </head>
     <body>
 
-        <h1 style="width: max-content; margin: 0 auto;">Chrome Camera/Audio Checker</h1>
-        <div id="container">
-            <video autoplay="true" id="videoElement" muted>
-            
-            </video>
-        </div>
+        <div class="camera-app">
+            <h1 style="width: max-content; margin: 0 auto;">Chrome Camera/Audio Checker</h1>
+            <div id="container">
+                <video autoplay="true" id="videoElement" muted>
+                
+                </video>
+            </div>
+    
+            <div class="control-holder">
+                <button id="reset">Close Test</button>
+                <p id="audioDetect">Audio is muted</p>
+                <button id="toggleAudio">Toggle Mute</button>
+            </div>
 
-        <div class="control-holder">
-            <button id="reset">Close Test</button>
-            <p id="audioDetect">Audio is muted</p>
-            <button id="toggleAudio">Toggle Mute</button>
         </div>
-
     </body>
 </html>

@@ -4,7 +4,6 @@ body {
 
 h1 {
 	color: rgb(34, 185, 92);
-
 	text-shadow: 2px 2px 3px black;
 }
 
@@ -12,7 +11,21 @@ h1 {
 button {
 	width: 75px;
 	height: 45px;
+	border-radius: 10px;
+	outline: none;
+	background-color: rgb(87, 79, 79);
+	color: rgb(34, 185, 92);
+	text-shadow: 2px 2px 3px black;
+	border: 2px rgb(34, 185, 92) solid;
 	align-self: center;
+}
+
+button:hover {
+	background-color: rgb(110, 101, 101);
+}
+
+button:active {
+	background-color: rgb(133, 125, 125);
 }
 
 .control-holder {
@@ -30,6 +43,8 @@ button {
 	margin-left: 8px;
 	margin-right: 8px;
 	width: max-content;
+	color: rgb(34, 185, 92);
+	text-shadow: 2px 2px 3px black;
 }
 
 #container {
