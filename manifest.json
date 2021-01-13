@@ -4,20 +4,21 @@
     "author": "KantKontrol",
     "version": "1.0",
     "manifest_version": 2,
-    "description": "A simple app used to check chromebook camera and microphone. Headphones recommended.",
+    "description": "A simple app used to check chromebook camera and microphone. Headphones Recommended.",
     "icons": {
-       "128": "128.png",
-       "16": "16.png"
-     },
+        "128": "128.png",
+        "16": "16.png"
+    },
     "app": {
-      "background": {
-        "scripts": [ "background.js" ],
-        "persistent": false
-    }
-     },
+        "background": {
+            "scripts": ["background.js"],
+            "persistent": false
+        }
+    },
     "permissions": [
         "audioCapture",
         "videoCapture"
     ],
-    "kiosk_enabled": true
+    "kiosk_enabled": true,
+    "kiosk_only": true
 }
