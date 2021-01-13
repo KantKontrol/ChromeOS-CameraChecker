@@ -69,7 +69,7 @@ button:active {
 	margin-right: auto;
 	display: flex;
 	align-items: center;
-	width: 900px;
+	width: max-content;
 	max-height: 400px;
 }
 
