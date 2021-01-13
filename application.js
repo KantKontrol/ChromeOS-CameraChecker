@@ -1,4 +1,4 @@
-const videoIsStream = false;
+let videoIsStream = false;
 
 window.onload = function() {
 
