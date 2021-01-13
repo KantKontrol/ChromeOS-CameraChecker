@@ -19,6 +19,5 @@
         "audioCapture",
         "videoCapture"
     ],
-    "kiosk_enabled": true,
-    "kiosk_only": true
+    "kiosk_enabled": true
 }
