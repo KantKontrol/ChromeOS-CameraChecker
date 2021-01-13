@@ -7,29 +7,35 @@
     </head>
     <body>
 
-        <div class="camera-app">
-            <h1 style="width: max-content; margin: 10px auto;">Chrome Camera/Audio Checker</h1>
-            <h3 style="width: max-content; margin: 0 auto;">It is recommened you use headphones while testing.</h3>
-            <h3 style="width: max-content; margin: 0 auto;">This prevents echo with your speakers.</h3>
+        <h1 style="width: max-content; margin: 10px auto;">Chrome Camera/Audio Checker</h1>
+        <h3 style="width: max-content; margin: 0 auto;">It is recommened you use headphones while testing.</h3>
+        <h3 style="width: max-content; margin: 0 auto;">This prevents echo with your speakers.</h3>
 
-            <div id="container" class="container">
-                <video autoplay="true" id="videoElement" muted>
-                
-                </video>
+        <div id="center-div">
+            <div class="camera-app">
+
+
+                <div id="container" class="container">
+                    <video autoplay="true" id="videoElement" muted>
+                    
+                    </video>
+                    
+                </div>
+        
+                <div class="control-holder">
+                    <button id="reset">Close Test</button>
+                    <p id="audioDetect" class="audioMutedText">Audio is muted</p>
+                    <button id="toggleAudio">Toggle Mute</button>
+                </div>
+    
             </div>
     
-            <div class="control-holder">
-                <button id="reset">Close Test</button>
-                <p id="audioDetect" class="audioMutedText">Audio is muted</p>
-                <button id="toggleAudio">Toggle Mute</button>
-            </div>
-
+            <footer id="footer">
+                <h4>Made by Nicholas DeRissio</h4>
+                <h4>Wayne Township Public Schools</h4>
+                <img src="./wtpslogo.jpg" alt="Wayne Township Public Schools"/>
+            </footer>
         </div>
 
-        <footer id="footer">
-            <h4>Made by Nicholas DeRissio</h4>
-            <h4>Wayne Township Public Schools</h4>
-            <img src="./wtpslogo.jpg" alt="Wayne Township Public Schools"/>
-        </footer>
     </body>
 </html>
