@@ -37,6 +37,11 @@ button:focus {
 	background-color: rgb(133, 125, 125);
 }
 
+button:disabled {
+	color: gray;
+	border: 2px solid darkgray;
+}
+
 .new-container {
 	display: flex;
 	justify-content: space-between;
@@ -73,6 +78,20 @@ button:focus {
 	height: 55px;
 	justify-content: center;
 	text-align: center;
+}
+
+.event-log {
+	text-shadow: 2px 2px 3px black;
+	border: 2px solid rgb(34, 185, 92);
+	box-shadow: 2px 3px 3px black;
+	min-width: 400px;
+	max-height: 100px;
+	overflow-y: auto;
+	padding: 5px;
+}
+
+.event {
+	margin: 0;
 }
 
 #center-div{
