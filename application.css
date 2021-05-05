@@ -33,6 +33,29 @@ button:active {
 	background-color: rgb(133, 125, 125);
 }
 
+.new-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.align-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.align-title > h3 {
+	color:rgb(34, 185, 92);
+}
+
+.new-video {
+	width: 400px;
+	height: 300px;
+	border: 10px rgb(34, 185, 92) solid;
+}
+
 .control-holder {
 	display: flex;
 	margin: 0px auto;
