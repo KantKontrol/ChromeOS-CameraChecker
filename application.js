@@ -17,7 +17,7 @@ window.onload = function() {
 
     let eventLog = document.getElementById('event-log');
 
-    let recordingTimeMS = 5000;
+    let recordingTimeMS = 6000;
     //==========================================
 
     let userStream = null;
@@ -102,6 +102,7 @@ window.onload = function() {
           let recordedBlob = new Blob(recordedChunks, { type: "video/webm" });
           playbackVideoEL.src = URL.createObjectURL(recordedBlob);
 
+        recordVideoEL.srcObject = null;
         logEvent(EventType.SUCCESS, "Successfully recorded video...");
       
         })
@@ -109,9 +110,9 @@ window.onload = function() {
       }, false);
 
 
-      endRecordButton.addEventListener("click", function() {
-        stop(recordVideoEL.srcObject);
-      }, false);
+    //   endRecordButton.addEventListener("click", function() {
+    //     stop(recordVideoEL.srcObject);
+    //   }, false);
 
 
       init();

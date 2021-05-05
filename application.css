@@ -13,6 +13,11 @@ h3 {
 	text-shadow: 2px 2px 3px black;
 }
 
+h4 {
+	color: rgb(34, 185, 92);
+	text-shadow: 2px 2px 3px black;
+}
+
 button {
 	width: 75px;
 	height: 45px;
@@ -92,6 +97,23 @@ button:disabled {
 
 .event {
 	margin: 0;
+}
+
+.credits {
+	width: 400px;
+	height: 220px;
+	border-left: 5px rgb(34, 185, 92) solid;
+	text-align: center;
+	text-shadow: 2px 2px 3px black;
+	color: rgb(34, 185, 92);
+}
+
+#wtpsimg {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+
+	box-shadow: 2px 4px 4px black;
 }
 
 #center-div{
