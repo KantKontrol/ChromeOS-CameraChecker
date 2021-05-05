@@ -7,13 +7,14 @@
     </head>
     <body>
 
-        <h1 style="width: max-content; margin: 10px auto;">Chrome Camera/Audio Checker</h1>
-        <h3 style="width: max-content; margin: 0 auto;">It is recommened you use headphones while testing.</h3>
-        <h3 style="width: max-content; margin: 0 auto;">This prevents echo with your speakers.</h3>
+        <div class="align-title" style="padding-bottom: 40px">     
+            <h1 style="width: max-content; margin: 10px auto;">Chrome Camera/Audio Checker</h1>
+            <button id="reset">Close Test</button>
+        </div>
+        
 
         <div id="center-div">
             <div class="camera-app">
-
 
                 <div class="new-container">
 
@@ -30,8 +31,6 @@
                         
                     </div>
 
-
-
                     <div class="align-title">
                         <h3 style="width: max-content;">Playback</h3>
                         <div class="new-video" style="margin-left: 10px;">
@@ -42,37 +41,8 @@
                         <div class="control-holder">
                             <button id="end-recording">View Recording</button>
                         </div>
-                        
                     </div>
-
-
                 </div>
-
-<!-- 
-                <div id="container" class="container">
-                    <video autoplay="true" id="videoElement" muted>
-                    
-                    </video>
-
-                    
-                    
-                </div>
-
-                <div id="container" class="container">
-                    <video autoplay="true" id="videoElement" muted>
-                    
-                    </video>
-
-                    
-                    
-                </div> -->
-        
-                <div class="control-holder">
-                    <button id="reset">Close Test</button>
-                    <p id="audioDetect" class="audioMutedText">Audio is muted</p>
-                    <button id="toggleAudio">Toggle Mute</button>
-                </div>
-    
             </div>
 <!--     
             <footer id="footer">

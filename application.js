@@ -43,7 +43,7 @@ window.onload = function() {
 
     function stop(stream) {
         stream.getTracks().forEach(track => track.stop());
-
+        stream = null;
     }
 
     startRecordButton.addEventListener("click", function() {
