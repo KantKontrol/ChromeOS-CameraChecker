@@ -60,6 +60,12 @@ button:focus {
 	border: 10px rgb(34, 185, 92) solid;
 }
 
+.video-element {
+	width: 400px;
+	height: 300px;
+	background-color: #666;
+}
+
 .control-holder {
 	display: flex;
 	margin: 0px auto;

@@ -20,11 +20,14 @@
                     <div class="align-title">
                         <h3 style="width: max-content;">Record</h3>
                         <div class="new-video">
-                            <video  autoplay="true" id="videoElement" muted>
+                            <video class="video-element" id="record-element" autoplay muted>
                         
                             </video>
                         </div>
-                        <button id="start-recording">Record</button>
+                        <div class="control-holder">
+                            <button id="start-recording">Record</button>
+                        </div>
+                        
                     </div>
 
 
@@ -32,11 +35,14 @@
                     <div class="align-title">
                         <h3 style="width: max-content;">Playback</h3>
                         <div class="new-video" style="margin-left: 10px;">
-                            <video  autoplay="true" id="videoElement" muted>
+                            <video class="video-element" id="playback-element" controls>
                         
                             </video>
                         </div>
-                        <button id="end-recording">View Recording</button>
+                        <div class="control-holder">
+                            <button id="end-recording">View Recording</button>
+                        </div>
+                        
                     </div>
 
 
