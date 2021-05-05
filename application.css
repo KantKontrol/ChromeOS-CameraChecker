@@ -33,6 +33,10 @@ button:active {
 	background-color: rgb(133, 125, 125);
 }
 
+button:focus {
+	background-color: rgb(133, 125, 125);
+}
+
 .new-container {
 	display: flex;
 	justify-content: space-between;
