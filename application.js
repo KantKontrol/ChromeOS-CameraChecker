@@ -84,11 +84,6 @@ window.onload = function() {
         .then(() => data);
     }
 
-    function stop(stream) {
-        stream.getTracks().forEach(track => track.stop());
-        stream = null;
-    }
-
     const beginRecordingStream = (stream) => {
         recordVideoEL.srcObject = stream;
         recordVideoEL.captureStream = recordVideoEL.captureStream;
@@ -108,6 +103,19 @@ window.onload = function() {
         })
         .catch(e => console.log(e));
       }, false);
+
+      function stop(stream) {
+        stream.getTracks().forEach(track => track.stop());
+        stream = null;
+    }
+
+
+     document.querySelector('#reset').onclick = function() {
+      if(userStream !== null){
+        stop(userStream);
+      }
+        window.close();
+     };
 
 
     //   endRecordButton.addEventListener("click", function() {
