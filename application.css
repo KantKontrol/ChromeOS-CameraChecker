@@ -26,6 +26,7 @@ button {
 	background-color: rgb(87, 79, 79);
 	color: rgb(34, 185, 92);
 	text-shadow: 2px 2px 3px black;
+	box-shadow: 2px 2px 3px black;
 	border: 2px rgb(34, 185, 92) solid;
 	align-self: center;
 }
