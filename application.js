@@ -18,6 +18,7 @@ window.onload = function() {
     let recordVideoEL = document.getElementById('record-element');
     let startRecordButton = document.getElementById('start-recording');
     let stopRecordButton = document.getElementById('stop-recording');
+    let recordStatus = document.getElementById('record-status');
     startRecordButton.disabled = true;
     stopRecordButton.disabled = true;
 
@@ -70,7 +71,9 @@ window.onload = function() {
         startRecordButton.disabled = true;
         stopRecordButton.disabled = false;
         chunks = [];
-         mediaRecorder.start();
+        mediaRecorder.start();
+        recordStatus.className = "animate-record";
+        logEvent(EventType.SUCCESS, "Recording has started");
       }
     });
 
@@ -85,6 +88,8 @@ window.onload = function() {
 
     stopRecordButton.addEventListener('click', () => {
       mediaRecorder.stop();
+      recordStatus.className = "";
+      logEvent(EventType.SUCCESS, "Recording stopped");
       startRecordButton.disabled = false;
       stopRecordButton.disabled = true;
     });
