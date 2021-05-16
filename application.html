@@ -12,8 +12,10 @@
 
             <div class="control-holder">
                 <button id="reset">Close Test</button>
-                <h4>Made by Nicholas DeRissio</h4>
-                <h4>Wayne Township Public Schools</h4>
+                <div style="display: flex; justify-content: flex-start; align-items: center; flex-direction: column; padding: 10px; border-left: 2px solid rgb(34, 185, 92);">
+                    <h4 style="margin: 0px">Made by Nicholas DeRissio</h4>
+                    <h4 style="margin-top: 8px; margin-bottom: 0px;">Wayne Township Public Schools</h4>
+                </div>
             </div>
 
             <img id="wtpsimg" src="./wtpslogo.jpg" alt="Wayne Township Public Schools"/>
@@ -37,7 +39,9 @@
                     </div>
 
                     <div class="align-title">
-                        <h3 style="width: max-content;">Playback</h3>
+                        <div class="control-holder" style='justify-content: center;'>
+                            <h3 style="width: max-content;">Playback</h3>
+                        </div>
                         <div class="new-video" style="margin-left: 10px;">
                             <video class="video-element" id="playback-element" controls>
                         </div>
