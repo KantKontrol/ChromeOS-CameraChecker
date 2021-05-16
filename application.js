@@ -29,6 +29,11 @@ window.onload = function() {
 
     let userStream = null;
     let mediaRecorder = null;
+    const mediaRecorderOptions = {
+      audioBitsPerSecond: 128000,
+      videoBitsPerSecond: 2500000,
+      mimeType: 'video/webm; codecs=vp9'
+    }
     let chunks = [];
 
     const init = () => {
@@ -40,7 +45,7 @@ window.onload = function() {
             if(userStream){
                 startRecordButton.disabled = false;
                 recordVideoEL.srcObject = userStream;
-                mediaRecorder = new MediaRecorder(userStream);
+                mediaRecorder = new MediaRecorder(userStream, mediaRecorderOptions);
                 setupMediaRecorderListeners();
             }
           })
@@ -80,7 +85,7 @@ window.onload = function() {
     setupMediaRecorderListeners = function(){
       mediaRecorder.ondataavailable = ({data}) => chunks.push(data);
       mediaRecorder.onstop = () => {
-        const blob = new Blob(chunks, { 'type' : 'video/mp4' });
+        const blob = new Blob(chunks, { 'type' : 'video/webm; codecs=vp9' });
         chunks = [];
         playbackVideoEL.src = window.URL.createObjectURL(blob);
       }
