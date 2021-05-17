@@ -1,6 +1,6 @@
 # ChromeOS-CameraChecker
 
-[![ChromeOS Camera Checker]()]
+[ChromeOS Camera Checker](https://github.com/KantKontrol/ChromeOS-CameraChecker/blob/main/screenshots/new.jpg?raw=true)
 
 ## Table of Contents
 
